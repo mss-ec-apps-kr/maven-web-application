@@ -8,7 +8,6 @@ git branch: 'development', url: 'https://github.com/mss-ec-apps-kr/maven-web-app
 stage('Build&Report'){
 sh "${mavenHome}/bin/mvn clean package sonar:sonar"
 }
-
 /*
 stage('Deploy'){
 sh "${mavenHome}/bin/mvn deploy"
